@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const isBrowser = typeof window !== "undefined";
+const isBrowser = typeof window; //!== "undefined";
 
 const useLocalStorage = (key, initial = null) => {
   const [value, setValue] = useState(() => {

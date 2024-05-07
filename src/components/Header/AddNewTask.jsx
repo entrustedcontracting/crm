@@ -13,7 +13,7 @@ const AddNewTask = () => {
         {
         width > 768 ? (
             <button className="btn btn__primary btn-lg" onClick={() => setOpenTaskModal(true)}>
-                + Add New Task
+                Create New Opportunity
             </button>
         ) : (
             <button className="btn btn__primary px-5 flex justify-center items-center" onClick={() => setOpenTaskModal(true)}>

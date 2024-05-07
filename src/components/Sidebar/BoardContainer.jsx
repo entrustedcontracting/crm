@@ -6,7 +6,7 @@ const BoardContainer = () => {
 
   return (
     <div className="flex-1 w-full">
-        <h3 className="heading-sm ml-6 uppercase">All boards ({boards.length})</h3>
+        <h3 className="heading-sm ml-6 uppercase">Entrusted Boards</h3>
         <div className="mt-8">
             {
             boards.map((board, i) => (
@@ -22,7 +22,7 @@ const BoardContainer = () => {
                 </div>
                 ))
             }
-            <AddNewBoard />
+            {/* <AddNewBoard /> */}
         </div>
     </div>
   )

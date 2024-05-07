@@ -35,7 +35,7 @@ const Board = () => {
             ))
         }
         </DragDropContext>
-        <NewColumn />
+        {/*<NewColumn />*/}
     </main>
   )
 }

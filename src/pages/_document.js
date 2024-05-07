@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>Kanban - Task Management</title>
+          <title>Entrusted CRM</title>
         </Head>
         <body>
           <Main />

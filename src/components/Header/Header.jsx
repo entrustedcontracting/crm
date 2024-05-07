@@ -46,7 +46,7 @@ const Header = () => {
                     <>
                         <div
                             className="w-[260px] lg:w-[300px] p-8 box-border transition-all ease border-r border-r-lightGreyLine dark:border-r-darkGreyLine">
-                            <Image src={theme === 'dark' ? "/logo-light.svg" : "/logo-dark.svg"} alt="kanban logo" height={25} width={152}  />
+                            <Image src={theme === 'dark' ? "/entrusted-logo-white.svg" : "/entrusted-logo-orange.svg"} alt="kanban logo" height={25} width={152}  />
                         </div>
                         <h2 className="heading-lg ml-5 mr-2">{currentBoard?.name || "No Board Found"}</h2>
                     </>
@@ -57,7 +57,7 @@ const Header = () => {
         </div>
         <div className="flex items-center gap-4 md:pr-4">
             <AddNewTask />
-            <EditButton onConfirm={() => deleteBoard(currentBoard.id)} type="board" className="bottom-0 left-0 -translate-x-full translate-y-28"/>
+            {/* <EditButton onConfirm={() => deleteBoard(currentBoard.id)} type="board" className="bottom-0 left-0 -translate-x-full translate-y-28"/> */}
         </div>
     </header>
   )

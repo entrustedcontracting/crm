@@ -2,15 +2,15 @@
     "boards": [
       {
         "id": 0,
-        "name": "Platform Launch",
-        "slug": "platform-launch",
+        "name": "Entrusted CRM",
+        "slug": "entrusted-crm",
         "tasks": [
             {
               "title": "Build UI for onboarding flow",
               "id": 1,
               "slug": "build-ui-for-onboarding-flow",
               "description": "",
-              "status": "Todo",
+              "status": "Pending Booking",
               "subtasks": [
                 {
                   "title": "Sign up page",
@@ -31,7 +31,7 @@
               "id": 2,
               "slug": "build-ui-for-search",
               "description": "",
-              "status": "Todo",
+              "status": "Pending Booking",
               "subtasks": [
                 {
                   "title": "Search page",
@@ -44,7 +44,7 @@
               "id": 3,
               "slug": "build-settings-ui",
               "description": "",
-              "status": "Todo",
+              "status": "Pending Booking",
               "subtasks": [
                 {
                   "title": "Account page",
@@ -61,7 +61,7 @@
               "id": 0,
               "slug": "qa-and-test-all-major-user-journeys",
               "description": "Once we feel version one is ready, we need to rigorously test it both internally and externally to identify any major gaps.",
-              "status": "Todo",
+              "status": "Pending Booking",
               "subtasks": [
                 {
                   "title": "Internal testing",
@@ -304,197 +304,66 @@
               }
           ],
         "columns": [
-            {
-                "id": 1,
-                "name": "Todo",
-                "slug": "todo",
-                "color": "#49C4E5",
-                "tasks": [0,1,2,3]
-            },{
-                "name": "Doing",
-                "id": 2,
-                "slug": "doing",
-                "color": "#8471F2",
-                "tasks": [4,5,6,7,8,9]
-            },{
-                "name": "Done",
-                "id": 3,
-                "slug": "done",
-                "color": "#67E2AE",
-                "tasks": [10,11,12,13,14,15,16]
-            }
-        ]
-      },
-      {
-        "id": 3,
-        "name": "Marketing Plan",
-        "slug": "marketing-plan",
-        "tasks": [
-            {
-                "id": 18,
-                "title": "Plan Product Hunt launch",
-                "slug": "plan-product-hunt-launch",
-                "description": "",
-                "status": "Todo",
-                "subtasks": [
-                  {
-                    "title": "Find hunter",
-                    "isCompleted": false
-                  },
-                  {
-                    "title": "Gather assets",
-                    "isCompleted": false
-                  },
-                  {
-                    "title": "Draft product page",
-                    "isCompleted": false
-                  },
-                  {
-                    "title": "Notify customers",
-                    "isCompleted": false
-                  },
-                  {
-                    "title": "Notify network",
-                    "isCompleted": false
-                  },
-                  {
-                    "title": "Launch!",
-                    "isCompleted": false
-                  }
-                ]
-              },
-              {
-                "title": "Share on Show HN",
-                  "id": 19,
-                  "slug": "share-on-show-hn",
-                "description": "",
-                "status": "",
-                "subtasks": [
-                  {
-                    "title": "Draft out HN post",
-                    "isCompleted": false
-                  },
-                  {
-                    "title": "Get feedback and refine",
-                    "isCompleted": false
-                  },
-                  {
-                    "title": "Publish post",
-                    "isCompleted": false
-                  }
-                ]
-              },
-              {
-                "title": "Write launch article to publish on multiple channels",
-                  "id": 17,
-                  "slug": "write-launch-article-to-publish-on-multiple-channels",
-                "description": "",
-                "status": "",
-                "subtasks": [
-                  {
-                    "title": "Write article",
-                    "isCompleted": false
-                  },
-                  {
-                    "title": "Publish on LinkedIn",
-                    "isCompleted": false
-                  },
-                  {
-                    "title": "Publish on Inndie Hackers",
-                    "isCompleted": false
-                  },
-                  {
-                    "title": "Publish on Medium",
-                    "isCompleted": false
-                  }
-                ]
-              }
-
-        ],
-        "columns": [
           {
-            "id": 4,
-            "name": "Todo",
-            "slug": "todo",
-            "color": "#49C4E5",
-            "tasks": [17,18,19]
-          },
-          {
+              "id": 1,
+              "name": "Pending Booking",
+              "slug": "pb0",
+              "color": "#49C4E5",
+              "tasks": [0,1,2,3]
+          },{
+              "name": "ETA Requested",
+              "id": 2,
+              "slug": "er0",
+              "color": "#8471F2",
+              "tasks": [4,5,6,7,8,9]
+          },{
+              "name": "ETA Proposed",
+              "id": 3,
+              "slug": "ep0",
+              "color": "#67E2AE",
+              "tasks": [10,11,12,13,14,15,16]
+          },{
+              "id": 4,
+              "name": "ETA Confirmed",
+              "slug": "ec0",
+              "color": "#49C4E5",
+              "tasks": [0,1,2,3]
+          },{
+              "name": "Booked",
               "id": 5,
-            "name": "Doing",
-              "slug": "doing",
-              "color": "#49C4E5",
-            "tasks": []
-          },
-          {
+              "slug": "b0",
+              "color": "#8471F2",
+              "tasks": [4,5,6,7,8,9]
+          },{
+              "name": "At Location",
               "id": 6,
-              "name": "Done",
-              "slug": "done",
-              "color": "#49C4E5",
-            "tasks": []
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "name": "Roadmap",
-        "slug": "roadmap",
-        "tasks": [{
-            "id": 21,
-            "title": "Launch version one",
-            "slug": "launch-version-one",
-            "description": "",
-            "status": "Now",
-            "subtasks": [
-              {
-                "title": "Launch privately to our waitlist",
-                "isCompleted": false
-              },
-              {
-                "title": "Launch publicly on PH, HN, etc.",
-                "isCompleted": false
-              }
-            ]
-          },
-          {
-            "title": "Review early feedback and plan next steps for roadmap",
-              "id": 20,
-              "slug": "review-early-feedback-and-plan-next-steps-for-roadmap",
-            "description": "Beyond the initial launch, we're keeping the initial roadmap completely empty. This meeting will help us plan out our next steps based on actual customer feedback.",
-            "status": "Now",
-            "subtasks": [
-              {
-                "title": "Interview 10 customers",
-                "isCompleted": false
-              },
-              {
-                "title": "Review common customer pain points and suggestions",
-                "isCompleted": false
-              },
-              {
-                "title": "Outline next steps for our roadmap",
-                "isCompleted": false
-              }
-            ]
-          }],
-        "columns": [
-          {
-            "name": "Now",
-              "id": 7,
-              "slug": "now",
-            "tasks": [20,21]
-          },
-          {
-            "name": "Next",
+              "slug": "al0",
+              "color": "#67E2AE",
+              "tasks": [10,11,12,13,14,15,16]
+          },{
+            "name": "Pending Closing",
+            "id": 7,
+            "slug": "pc0",
+            "color": "#8471F2",
+            "tasks": [4,5,6,7,8,9]
+          },{
+              "name": "On Hold",
               "id": 8,
-              "slug": "next",
-            "tasks": []
-          },
-          {
-            "name": "Later",
-              "id": 9,
-              "slug": "later",
-            "tasks": []
+              "slug": "oh0",
+              "color": "#67E2AE",
+              "tasks": [10,11,12,13,14,15,16]
+          },{
+            "name": "Won",
+            "id": 9,
+            "slug": "w0",
+            "color": "#8471F2",
+            "tasks": [4,5,6,7,8,9]
+          },{
+              "name": "Lost",
+              "id": 10,
+              "slug": "l0",
+              "color": "#67E2AE",
+              "tasks": [10,11,12,13,14,15,16]
           }
         ]
       }

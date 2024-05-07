@@ -39,7 +39,7 @@ const AddNewTaskModal = ({onClose}) => {
             >
             { formik => (
                     <div className="w-full mx-auto rounded-md p-6 bg-white dark:bg-darkGrey md:p-8">
-                        <h1 className="heading-lg mb-6">Add New Task</h1>
+                        <h1 className="heading-lg mb-6">Inside Sales Form</h1>
 
                     <Form>
                         <TextInput label="Title" name="title" type="text" placeholder="e.g. Take coffee break"/>

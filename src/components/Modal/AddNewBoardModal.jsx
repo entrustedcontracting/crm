@@ -19,7 +19,7 @@ const AddNewBoardModal = ({onClose}) => {
         <Formik
         initialValues={{
             name: "",
-            columns: ['Todo', 'Doing'],
+            columns: ['Pending Booking', 'ETA Requested', 'ETA Proposed', 'ETA Confirmed', 'Booked', 'At Location', 'Pending Closing', 'On Hold', 'Won', 'Lost'],
         }}
         validationSchema={validate}
         onSubmit={ (values) => {
