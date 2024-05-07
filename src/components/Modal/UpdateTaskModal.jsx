@@ -1,5 +1,5 @@
 import Button from "@components/shared/Button"
-import StatusDropdown from "@components/shared/StatusDropdown";
+import StatusDropdown from "@components/shared/BranchDropdown";
 import TextInput from "@components/shared/TextInput";
 import { useBoards } from "@src/context";
 import { Formik, Form, FieldArray } from "formik";

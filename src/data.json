@@ -365,6 +365,234 @@
               "color": "#67E2AE",
               "tasks": [10,11,12,13,14,15,16]
           }
+        ],
+        "branches": [
+          {
+              "id": 1,
+              "name": "WPB",
+              "slug": "l0",
+              "color": "#67E2AE",
+              "tasks": [10,11,12,13,14,15,16]
+          },{
+              "id": 2,
+              "name": "ORL",
+              "slug": "l0",
+              "color": "#67E2AE",
+              "tasks": [10,11,12,13,14,15,16]
+          },{
+              "id": 3,
+              "name": "HOU",
+              "slug": "l0",
+              "color": "#67E2AE",
+              "tasks": [10,11,12,13,14,15,16]
+          }
+        ],
+        "tags": [
+          {
+              "id": 10,
+              "name": "VIP"
+          },{
+              "name": "Canceled ES",
+              "id": 11
+          },{
+              "name": "Canceled GC",
+              "id": 12
+          },{
+              "id": 13,
+              "name": "Complimentary"
+          },{
+              "name": "Comparative Assessment",
+              "id": 14
+          },{
+              "name": "Partner Discount",
+              "id": 15
+          },{
+            "name": "Cancellation Concern",
+            "id": 16
+          },{
+              "name": "Insurance",
+              "id": 17
+          },{
+            "name": "Cash",
+            "id": 18
+          },{
+              "name": "ES",
+              "id": 19
+          },{
+            "name": "GC",
+            "id": 20
+          },{
+            "name": "MLD",
+            "id": 21
+          },{
+            "name": "FRE",
+            "id": 22
+          },{
+            "name": "On Hold",
+            "id": 23
+          }
+        ],
+        "carrier": [
+          {
+              "id": 24,
+              "name": "Fl Family"
+          },{
+              "name": "Fl Farm",
+              "id": 25
+          },{
+              "name": "Universal",
+              "id": 26
+          },{
+              "id": 27,
+              "name": "Citizens"
+          },{
+              "name": "Other",
+              "id": 28
+          }
+        ],
+        "referralSource": [
+          {
+              "id": 29,
+              "name": "JMS"
+          },{
+              "name": "1800 Plumber",
+              "id": 30
+          },{
+              "name": "Universal",
+              "id": 31
+          },{
+              "id": 32,
+              "name": "Ironman Plumbing"
+          },{
+              "name": "American Leak Detection",
+              "id": 33
+          }
+        ],
+        "referralSourceIndividual": [
+          {
+              "id": 34,
+              "name": "Rey"
+          },{
+              "name": "1800 Plumber",
+              "id": 35
+          },{
+              "name": "John",
+              "id": 36
+          },{
+              "id": 37,
+              "name": "Jackson"
+          },{
+              "name": "Maria",
+              "id": 38
+          }
+        ],
+        "vip": [
+          {
+              "id": 39,
+              "name": "Partner home or Family member home"
+          },{
+              "name": "VIP for them",
+              "id": 40
+          },{
+              "name": "A lot of fires",
+              "id": 41
+          },{
+              "id": 42,
+              "name": "New account and early lead"
+          }
+        ],
+        "accountManager": [
+          {
+              "id": 43,
+              "name": "Aaron Bergeron"
+          },{
+              "name": "Josh Sattiazahn",
+              "id": 44
+          },{
+              "name": "Jeff Algra",
+              "id": 45
+          },{
+              "id": 46,
+              "name": "Garrett McCray"
+          }
+        ],
+        "opportunityType": [
+          {
+              "id": 47,
+              "name": "WTR"
+          },{
+              "name": "FRE",
+              "id": 48
+          },{
+              "name": "MLD",
+              "id": 49
+          },{
+              "id": 50,
+              "name": "RBD"
+          },{
+            "id": 51,
+            "name": "RNO"
+        }
+        ],
+        "homeowner": [
+          {
+              "id": 52,
+              "name": "Yes"
+          },{
+              "name": "No",
+              "id": 53
+          }
+        ],
+        "gatedCommunity": [
+          {
+              "id": 54,
+              "name": "Yes"
+          },{
+              "name": "No",
+              "id": 55
+          }
+        ],
+        "propertyType": [
+          {
+              "id": 56,
+              "name": "Residential"
+          },{
+              "name": "Commercial",
+              "id": 57
+          }
+        ],
+        "col": [
+          {
+              "id": 58,
+              "name": "A/C Leak"
+          },{
+              "name": "Foundation/Structural Leak",
+              "id": 59
+          },{
+            "name": "Sink Leak",
+            "id": 60
+        }
+        ],
+        "zone": [
+          {
+              "id": 61,
+              "name": "1"
+          },{
+              "name": "2",
+              "id": 62
+          },{
+            "name": "3",
+            "id": 63
+        }
+        ],
+        "action": [
+          {
+              "id": 64,
+              "name": "Left Voicemail"
+          },{
+              "name": "Sent Text",
+              "id": 65
+          }
         ]
       }
   ]

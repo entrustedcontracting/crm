@@ -13,11 +13,27 @@ function BoardProvider({ children }) {
   const currentBoard = boards[activeBoard];
 
   const columns = currentBoard?.columns;
+  const branches = currentBoard?.branches;
+  const tags = currentBoard?.tags;
+  const carriers = currentBoard?.carrier;
+  const referralSources = currentBoard?.referralSource;
+  const referralSourceIndividuals = currentBoard?.referralSourceIndividual;
+  const vips = currentBoard?.vip;
+  const accountManagers = currentBoard?.accountManager;
+  const opportunityTypes = currentBoard?.opportunityType;
+  const homeowners = currentBoard?.homeowner;
+  const gatedCommunities = currentBoard?.gatedCommunity;
+  const propertyTypes = currentBoard?.propertyType;
+  const cols = currentBoard?.col;
+  const zones = currentBoard?.zone;
+  const actions = currentBoard?.action;
 
   const createTask = (task) => {
     task.id = uuidv4();
     const column = columns.find((column) => column.name === task.status);
+    const branch = branches.find((branch) => branch.name === task.branch);
     task.status = column.name;
+    task.branch = branch.name;
     task.subtasks = task.subtasks.map((subtask) => {
       return {
         ...subtask,
@@ -45,13 +61,13 @@ function BoardProvider({ children }) {
     newColumns = board.columns.filter((e) => e);
     newColumns.length
       ? (newColumns = newColumns.map((column) => {
-          return {
-            id: uuidv4(),
-            name: column,
-            tasks: [],
-            slug: stringToSlug(column),
-          };
-        }))
+        return {
+          id: uuidv4(),
+          name: column,
+          tasks: [],
+          slug: stringToSlug(column),
+        };
+      }))
       : null;
     console.log(newColumns);
     board.columns = newColumns;
@@ -116,6 +132,7 @@ function BoardProvider({ children }) {
   const deleteTask = (taskId) => {
     const task = currentBoard.tasks.find((task) => task.id === taskId);
     const column = columns.find((column) => column.name === task.status);
+    const branch = branches.find((branch) => branch.name === task.branch);
     column.tasks = column.tasks.filter((id) => id !== taskId);
     console.log(currentBoard.tasks);
     currentBoard.tasks = currentBoard.tasks.filter(
@@ -161,6 +178,7 @@ function BoardProvider({ children }) {
       const taskId = column.tasks[source.index];
       const draggedTask = currentBoard.tasks.find((task) => task.id === taskId);
       draggedTask.status = destination.droppableId;
+      draggedTask.branch = destination.droppableId;
       column.tasks.splice(source.index, 1);
       const newColumn = columns.find(
         (column) => column.name === destination.droppableId
@@ -175,6 +193,20 @@ function BoardProvider({ children }) {
     setBoards,
     currentBoard,
     columns,
+    branches,
+    tags, 
+    carriers,
+    referralSources, 
+    referralSourceIndividuals, 
+    vips, 
+    accountManagers, 
+    opportunityTypes, 
+    homeowners, 
+    gatedCommunities, 
+    propertyTypes, 
+    cols, 
+    zones, 
+    actions,
     createBoard,
     createColumn,
     toggleSubtask,
