@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const isBrowser = typeof window; //!== "undefined";
+const isBrowser = typeof window !== "undefined";
 
 const useLocalStorage = (key, initial = null) => {
   const [value, setValue] = useState(() => {
@@ -14,7 +14,7 @@ const useLocalStorage = (key, initial = null) => {
   });
 
   useEffect(() => {
-    window.localStorage.setItem(key, JSON.stringify(value));
+    localStorage.setItem(key, JSON.stringify(value));
   }, [key, value]);
 
   return [value, setValue];
