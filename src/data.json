@@ -38,270 +38,7 @@
                   "isCompleted": false
                 }
               ]
-            },
-            {
-              "title": "Build settings UI",
-              "id": 3,
-              "slug": "build-settings-ui",
-              "description": "",
-              "status": "Pending Booking",
-              "subtasks": [
-                {
-                  "title": "Account page",
-                  "isCompleted": false
-                },
-                {
-                  "title": "Billing page",
-                  "isCompleted": false
-                }
-              ]
-            },
-            {
-              "title": "QA and test all major user journeys",
-              "id": 0,
-              "slug": "qa-and-test-all-major-user-journeys",
-              "description": "Once we feel version one is ready, we need to rigorously test it both internally and externally to identify any major gaps.",
-              "status": "Pending Booking",
-              "subtasks": [
-                {
-                  "title": "Internal testing",
-                  "isCompleted": false
-                },
-                {
-                  "title": "External testing",
-                  "isCompleted": false
-                }
-              ]
-            },
-            {
-                "title": "Design settings and search pages",
-                "id": 5,
-                "slug": "design-settings-and-search-pages",
-                "description": "",
-                "status": "Doing",
-                "subtasks": [
-                  {
-                    "title": "Settings - Account page",
-                    "isCompleted": true
-                  },
-                  {
-                    "title": "Settings - Billing page",
-                    "isCompleted": true
-                  },
-                  {
-                    "title": "Search page",
-                    "isCompleted": false
-                  }
-                ]
-              },
-              {
-                "title": "Add account management endpoints",
-                "id": 6,
-                "slug": "add-account-management-endpoints",
-                "description": "",
-                "status": "Doing",
-                "subtasks": [
-                  {
-                    "title": "Upgrade plan",
-                    "isCompleted": true
-                  },
-                  {
-                    "title": "Cancel plan",
-                    "isCompleted": true
-                  },
-                  {
-                    "title": "Update payment method",
-                    "isCompleted": false
-                  }
-                ]
-              },
-              {
-                "title": "Design onboarding flow",
-                "id": 7,
-                "slug": "design-onboarding-flow",
-                "description": "",
-                "status": "Doing",
-                "subtasks": [
-                  {
-                    "title": "Sign up page",
-                    "isCompleted": true
-                  },
-                  {
-                    "title": "Sign in page",
-                    "isCompleted": false
-                  },
-                  {
-                    "title": "Welcome page",
-                    "isCompleted": false
-                  }
-                ]
-              },
-              {
-                "title": "Add search enpoints",
-                "id": 8,
-                "slug": "add-search-endpoints",
-                "description": "",
-                "status": "Doing",
-                "subtasks": [
-                  {
-                    "title": "Add search endpoint",
-                    "isCompleted": true
-                  },
-                  {
-                    "title": "Define search filters",
-                    "isCompleted": false
-                  }
-                ]
-              },
-              {
-                "title": "Add authentication endpoints",
-                "id": 9,
-                "slug": "add-authentication-endpoints",
-                "description": "",
-                "status": "Doing",
-                "subtasks": [
-                  {
-                    "title": "Define user model",
-                    "isCompleted": true
-                  },
-                  {
-                    "title": "Add auth endpoints",
-                    "isCompleted": false
-                  }
-                ]
-              },
-              {
-                "title": "Research pricing points of various competitors and trial different business models",
-                "id": 4,
-                "slug": "research-pricing-points-of-various-competitors-and-trial-different-business-models",
-                "description": "We know what we're planning to build for version one. Now we need to finalise the first pricing model we'll use. Keep iterating the subtasks until we have a coherent proposition.",
-                "status": "Doing",
-                "subtasks": [
-                  {
-                    "title": "Research competitor pricing and business models",
-                    "isCompleted": true
-                  },
-                  {
-                    "title": "Outline a business model that works for our solution",
-                    "isCompleted": false
-                  },
-                  {
-                    "title": "Talk to potential customers about our proposed solution and ask for fair price expectancy",
-                    "isCompleted": false
-                  }
-                ]
-              },
-              {
-                "title": "Conduct 5 wireframe tests",
-                "id": 11,
-                "slug": "conduct-5-wireframe-tests",
-                "description": "Ensure the layout continues to make sense and we have strong buy-in from potential users.",
-                "status": "Done",
-                "subtasks": [
-                  {
-                    "title": "Complete 5 wireframe prototype tests",
-                    "isCompleted": true
-                  }
-                ]
-              },
-              {
-                "title": "Create wireframe prototype",
-                "id": 12,
-                "slug": "create-wireframe-prototype",
-                "description": "Create a greyscale clickable wireframe prototype to test our asssumptions so far.",
-                "status": "Done",
-                "subtasks": [
-                  {
-                    "title": "Create clickable wireframe prototype in Balsamiq",
-                    "isCompleted": true
-                  }
-                ]
-              },
-              {
-                "title": "Review results of usability tests and iterate",
-                "id": 13,
-                "slug": "review-results-of-usability-tests-and-iterate",
-                "description": "Keep iterating through the subtasks until we're clear on the core concepts for the app.",
-                "status": "Done",
-                "subtasks": [
-                  {
-                    "title": "Meet to review notes from previous tests and plan changes",
-                    "isCompleted": true
-                  },
-                  {
-                    "title": "Make changes to paper prototypes",
-                    "isCompleted": true
-                  },
-                  {
-                    "title": "Conduct 5 usability tests",
-                    "isCompleted": true
-                  }
-                ]
-              },
-              {
-                "title": "Create paper prototypes and conduct 10 usability tests with potential customers",
-                "id": 14,
-                "slug": "create-paper-prototypes-and-conduct-10-usability-tests-with-potential-customers",
-                "description": "",
-                "status": "Done",
-                "subtasks": [
-                  {
-                    "title": "Create paper prototypes for version one",
-                    "isCompleted": true
-                  },
-                  {
-                    "title": "Complete 10 usability tests",
-                    "isCompleted": true
-                  }
-                ]
-              },
-              {
-                "title": "Market discovery",
-                "id": 15,
-                "slug": "market-discovery",
-                "description": "We need to define and refine our core product. Interviews will help us learn common pain points and help us define the strongest MVP.",
-                "status": "Done",
-                "subtasks": [
-                  {
-                    "title": "Interview 10 prospective customers",
-                    "isCompleted": true
-                  }
-                ]
-              },
-              {
-                "title": "Competitor analysis",
-                "id": 16,
-                "slug": "competitor-analysis",
-                "description": "",
-                "status": "Done",
-                "subtasks": [
-                  {
-                    "title": "Find direct and indirect competitors",
-                    "isCompleted": true
-                  },
-                  {
-                    "title": "SWOT analysis for each competitor",
-                    "isCompleted": true
-                  }
-                ]
-              },
-              {
-                "id": 10,
-                "title": "Research the market",
-                "slug": "research-the-market",
-                "description": "We need to get a solid overview of the market to ensure we have up-to-date estimates of market size and demand.",
-                "status": "Done",
-                "subtasks": [
-                  {
-                    "title": "Write up research analysis",
-                    "isCompleted": true
-                  },
-                  {
-                    "title": "Calculate TAM",
-                    "isCompleted": true
-                  }
-                ]
-              }
+            }
           ],
         "columns": [
           {
@@ -309,61 +46,61 @@
               "name": "Pending Booking",
               "slug": "pb0",
               "color": "#49C4E5",
-              "tasks": [0,1,2,3]
+              "tasks": [0,1]
           },{
               "name": "ETA Requested",
               "id": 2,
               "slug": "er0",
               "color": "#8471F2",
-              "tasks": [4,5,6,7,8,9]
+              "tasks": []
           },{
               "name": "ETA Proposed",
               "id": 3,
               "slug": "ep0",
               "color": "#67E2AE",
-              "tasks": [10,11,12,13,14,15,16]
+              "tasks": []
           },{
               "id": 4,
               "name": "ETA Confirmed",
               "slug": "ec0",
               "color": "#49C4E5",
-              "tasks": [0,1,2,3]
+              "tasks": []
           },{
               "name": "Booked",
               "id": 5,
               "slug": "b0",
               "color": "#8471F2",
-              "tasks": [4,5,6,7,8,9]
+              "tasks": []
           },{
               "name": "At Location",
               "id": 6,
               "slug": "al0",
               "color": "#67E2AE",
-              "tasks": [10,11,12,13,14,15,16]
+              "tasks": []
           },{
             "name": "Pending Closing",
             "id": 7,
             "slug": "pc0",
             "color": "#8471F2",
-            "tasks": [4,5,6,7,8,9]
+            "tasks": []
           },{
               "name": "On Hold",
               "id": 8,
               "slug": "oh0",
               "color": "#67E2AE",
-              "tasks": [10,11,12,13,14,15,16]
+              "tasks": []
           },{
             "name": "Won",
             "id": 9,
             "slug": "w0",
             "color": "#8471F2",
-            "tasks": [4,5,6,7,8,9]
+            "tasks": []
           },{
               "name": "Lost",
               "id": 10,
               "slug": "l0",
               "color": "#67E2AE",
-              "tasks": [10,11,12,13,14,15,16]
+              "tasks": []
           }
         ],
         "branches": [
@@ -486,7 +223,34 @@
               "id": 38
           }
         ],
-        "vip": [
+        "compJob": [
+          {
+              "id": 39,
+              "name": "Yes"
+          },{
+              "name": "No",
+              "id": 40
+          }
+        ],
+        "pDJob": [
+          {
+              "id": 39,
+              "name": "Yes"
+          },{
+              "name": "No",
+              "id": 40
+          }
+        ],
+        "vips": [
+          {
+              "id": 39,
+              "name": "Yes"
+          },{
+              "name": "No",
+              "id": 40
+          }
+        ],
+        "ifVip": [
           {
               "id": 39,
               "name": "Partner home or Family member home"
@@ -514,6 +278,15 @@
           },{
               "id": 46,
               "name": "Garrett McCray"
+          }
+        ],
+        "confirmAddress": [
+          {
+              "id": 39,
+              "name": "Yes"
+          },{
+              "name": "No",
+              "id": 40
           }
         ],
         "opportunityType": [

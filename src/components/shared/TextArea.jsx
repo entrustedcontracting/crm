@@ -3,7 +3,7 @@ import { useField, ErrorMessage } from 'formik';
 const TextArea = ({ label, ...props }) => {
   const [field, meta] = useField(props);
   return (
-    <div className="mb-6">
+    <div className="mb-6 pt-6">
       <label
         className="body-md text-mediumGrey dark:text-white block"
         htmlFor={field.name}

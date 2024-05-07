@@ -25,8 +25,8 @@ module.exports = {
         mediumGrey: "#828fa3",
         lightGreyLine: "#e4ebfa",
         lightGrey: "#f4f7fd",
-        mainPurple: "#EB690B",
-        mainPurpleHover: "#EB690B",
+        mainPurple: "#EB690B", //this is orange
+        mainPurpleHover: "#EB690B", //this is orange
         mainRed: "#EA5555",
         mainRedHover: "#FF9898",
       },

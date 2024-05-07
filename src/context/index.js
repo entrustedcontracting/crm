@@ -18,8 +18,12 @@ function BoardProvider({ children }) {
   const carriers = currentBoard?.carrier;
   const referralSources = currentBoard?.referralSource;
   const referralSourceIndividuals = currentBoard?.referralSourceIndividual;
-  const vips = currentBoard?.vip;
+  const compJob = currentBoard?.compJob;
+  const pDJob = currentBoard?.pDJob;
+  const vips = currentBoard?.vips;
+  const ifVips = currentBoard?.ifVip;
   const accountManagers = currentBoard?.accountManager;
+  const confirmAddress = currentBoard?.confirmAddress;
   const opportunityTypes = currentBoard?.opportunityType;
   const homeowners = currentBoard?.homeowner;
   const gatedCommunities = currentBoard?.gatedCommunity;
@@ -34,12 +38,12 @@ function BoardProvider({ children }) {
     const branch = branches.find((branch) => branch.name === task.branch);
     task.status = column.name;
     task.branch = branch.name;
-    task.subtasks = task.subtasks.map((subtask) => {
-      return {
-        ...subtask,
-        isCompleted: false,
-      };
-    });
+    // task.subtasks = task.subtasks.map((subtask) => {
+    //   return {
+    //     ...subtask,
+    //     isCompleted: false,
+    //   };
+    // });
     task.slug = stringToSlug(task.title);
     console.log(task);
     column.tasks.push(task.id);
@@ -198,8 +202,12 @@ function BoardProvider({ children }) {
     carriers,
     referralSources, 
     referralSourceIndividuals, 
-    vips, 
+    compJob,
+    pDJob,
+    vips,
+    ifVips, 
     accountManagers, 
+    confirmAddress,
     opportunityTypes, 
     homeowners, 
     gatedCommunities, 

@@ -4,7 +4,7 @@ const TextInput = ({ label, ...props }) => {
   const [field, meta] = useField(props);
   // console.log(field, meta);
   return (
-    <div className="flex-grow">
+    <div className="flex-grow pt-6">
       { label && (
       <label
         className="body-md text-mediumGrey dark:text-white block"
