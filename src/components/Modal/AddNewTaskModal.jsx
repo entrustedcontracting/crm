@@ -13,7 +13,7 @@ import { createClient } from '@supabase/supabase-js'
 import { v4 as uuidv4 } from "uuid";
 // 
 const supabaseUrl = 'https://tnjoxuevcrbolyxetddm.supabase.co'
-const supabaseKey = process.env.SUPABASE_KEY
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRuam94dWV2Y3Jib2x5eGV0ZGRtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTUwMjY1NzksImV4cCI6MjAzMDYwMjU3OX0.9c4mqe_HHcTMQ35ht0auAKf1hNHs5OZu94fxhPg5wZc'
 const supabase = createClient(supabaseUrl, supabaseKey)
 
 const AddNewTaskModal = ({ onClose }) => {
