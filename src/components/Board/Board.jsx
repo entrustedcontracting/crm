@@ -8,6 +8,8 @@ import NoBoardsFound from './NoBoardsFound';
 
 const Board = () => {
   const {currentBoard, boards, dragTask} = useBoards();
+  console.log(currentBoard);
+  console.log(boards);
 
   function handleOnDragEnd(result) {
     const {source, destination} = result;
@@ -27,8 +29,9 @@ const Board = () => {
                 <Column data={column} key={i}>
                     {
                         column.tasks.map((taskId, j) => {
-                            const task = currentBoard.tasks.filter(task => task.id === taskId)[0];
-                            return <Task data={task} index={j} key={taskId} />
+                            const task = currentBoard.tasks[0]//.filter(task => task.id === taskId)[0];
+                            console.log(task);
+                            return <Task data={task} index={j}/>
                         })
                     }
                 </Column>

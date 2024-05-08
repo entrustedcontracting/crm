@@ -11,7 +11,7 @@ function BoardProvider({ children }) {
   const [activeBoard, setActiveBoard] = useState(0);
 
   const currentBoard = boards[activeBoard];
-
+  
   const columns = currentBoard?.columns;
   const branches = currentBoard?.branches;
   const tags = currentBoard?.tags;
@@ -44,8 +44,8 @@ function BoardProvider({ children }) {
     //     isCompleted: false,
     //   };
     // });
-    task.slug = stringToSlug(task.title);
-    console.log(task);
+    task.slug = stringToSlug(task.customer);
+    console.log(slug);
     column.tasks.push(task.id);
     currentBoard.tasks.push(task);
     setBoards([...boards]);

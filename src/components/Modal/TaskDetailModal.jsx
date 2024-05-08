@@ -19,10 +19,7 @@ const TaskDetailModal = ({ data, completedSubtasks, switchToUpdate, switchToDele
         <p className="body-lg text-mediumGrey">
             {data.description}
         </p>
-        <h3 className="mt-6 mb-4 body-md text-mediumGrey dark:text-white">
-            Subtasks ({completedSubtasks} of {data.subtasks.length})
-        </h3>
-        {
+        {/* {
             data.subtasks.map((subtask, i) => (
                 <label key={i} htmlFor={`${subtask}-${i}`} className={`body-md p-3 mb-2 inline-flex w-full rounded transition bg-lightGrey cursor-pointer hover:bg-mainPurple hover:bg-opacity-25 dark:text-white dark:bg-veryDarkGrey dark:hover:bg-mainPurple dark:hover:bg-opacity-25`}>
                     <input
@@ -35,7 +32,7 @@ const TaskDetailModal = ({ data, completedSubtasks, switchToUpdate, switchToDele
                     <span className={`${subtask.isCompleted ? "opacity-50 line-through" : "opacity-100"} transition`}>{subtask.title}</span>
                 </label>
             ))
-        }
+        } */}
 
         <StatusDropdown label="Current Status" data={data} />
 

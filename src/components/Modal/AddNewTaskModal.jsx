@@ -100,7 +100,7 @@ const AddNewTaskModal = ({ onClose }) => {
                         <TextInput label="On Call DC" name="onCallDC" type="text" placeholder=""/>
                         {/* <StatusDropdown status={status} setStatus={setStatus} /> */}
 
-                        <Button type="submit" className="mt-6 w-full bg-mainPurple text-white text-base rounded-full p-2 transition duration-200 hover:bg-mainPurpleHover">+ Add New Task</Button>
+                        <Button type="submit" className="mt-6 w-full bg-mainPurple text-white text-base rounded-full p-2 transition duration-200 hover:bg-mainPurpleHover">Submit New Lead</Button>
                     </Form>
                 </div>
             )}

@@ -12,20 +12,19 @@ const Task = ({ data, index }) => {
   const [updateModal, setUpdateModal] = useState(false);
   const [deleteModal, setDeleteModal] = useState(false);
   const { deleteTask } = useBoards();
-  console.log("hello" + data);
 
   //number of completed subtasks
   //const completedSubtasks = data.subtasks.reduce((acc, subtask) => subtask.isCompleted ? acc + 1 : acc, 0);
   return (
-    // <Draggable draggableId={data.slug} index={index} >
-        // {(provided) => (
-        //     <>
-            <div>
+    <Draggable draggableId={data.slug} index={index} >
+        {(provided) => (
+        <>
+            <div index={index}>
                 <li className="group select-none shadow-main px-4 py-6 rounded-lg cursor-pointer bg-white text-black dark:bg-darkGrey dark:text-white"
-                // {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef}
+                {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef}
                 onClick={() => setOpenTaskModal(true)}>
-                    {/* <h4 className="heading-md mb-2 group-hover:text-mainPurple">{data.title}</h4> */}
-                    {/* <p className="body-md text-mediumGrey">{completedSubtasks} of {data.subtasks.length} subtasks</p> */}
+                    <h4 className="heading-md mb-2 group-hover:text-mainPurple">{data.customer} for {data.branch}</h4>
+                    <p className="body-md text-mediumGrey">{data.etaRequested} at {data.streetAddress}</p>
                 </li>
                 <Modal show={openTaskModal} onClose={() => setOpenTaskModal(false)}>
                     <TaskDetailModal
@@ -46,7 +45,7 @@ const Task = ({ data, index }) => {
                 </Modal>
                 <Modal show={deleteModal} onClose={() => setDeleteModal(!deleteModal)}>
                     <DeleteTaskModal
-                    // title={data.customer}
+                    title={data.customer}
                     onClose={() => {
                         setDeleteModal(false);
                         setOpenTaskModal(true);
@@ -57,9 +56,9 @@ const Task = ({ data, index }) => {
                     }}/>
                 </Modal>
             </div>
-        //     </>
-        // )}
-    /* </Draggable> */
+             </>
+         )}
+    </Draggable>
   );
 };
 export default Task
