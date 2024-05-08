@@ -4,42 +4,14 @@
             "id": 0,
             "name": "Entrusted CRM",
             "slug": "entrusted-crm",
-            "tasks": [
-                {
-                    "secondPhone": "01234567890",
-                    "branch": "WPB",
-                    "city": "Stuart",
-                    "colDetails": "Here are some COL details",
-                    "customer": "Larry Cucumber",
-                    "description": "Here is a description",
-                    "email": "larry.cucumber@email.com",
-                    "etaRequested": "8:10 am",
-                    "gateCode": "1234",
-                    "id": "7",
-                    "lockBoxCode": "5678",
-                    "marketingAssistance": "Marketing assistance information",
-                    "onCallDC": "Bob Tomato",
-                    "phone": "09876543210",
-                    "slug": "heythere",
-                    "specialInstructions": "Here are some special instructions",
-                    "state": "Florida",
-                    "status": "",
-                    "streetAddress": "123 Kitchen Ln",
-                    "title": "",
-                    "yearBuilt": "2001",
-                    "zip": "10101"
-                }
-            ],
+            "tasks": [],
             "columns": [
                 {
                     "id": 1,
                     "name": "Pending Booking",
                     "slug": "pb0",
                     "color": "#49C4E5",
-                    "tasks": [
-                        0,
-                        1
-                    ]
+                    "tasks": []
                 },
                 {
                     "name": "ETA Requested",

@@ -46,8 +46,8 @@ const AddNewTaskModal = ({ onClose }) => {
             onSubmit={(values) => {
                 console.log(values);
                 console.log('test');
-                createTask(values)
-                onClose()
+                createTask(values);
+                onClose();
             }}
         >
             {formik => (

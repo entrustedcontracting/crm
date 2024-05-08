@@ -8,7 +8,7 @@ const TaskDetailModal = ({ data, completedSubtasks, switchToUpdate, switchToDele
   return (
     <div className="w-full mx-auto rounded-md p-6 bg-white dark:bg-darkGrey md:p-8">
         <div className="flex items-center justify-between gap-4 mb-6">
-            <h1 className="heading-lg">{data.title}</h1>
+            <h1 className="heading-lg">{new Date().getFullYear() % 100}-{Math.floor(Math.random()*90000) + 10000}-{data.customer.replace(/\s/g, '').toLowerCase()}-{data.branch.toLowerCase()}</h1>
             <EditButton
             switchToUpdate={switchToUpdate}
             switchToDelete={switchToDelete}

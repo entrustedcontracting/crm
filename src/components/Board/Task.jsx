@@ -23,7 +23,7 @@ const Task = ({ data, index }) => {
                 <li className="group select-none shadow-main px-4 py-6 rounded-lg cursor-pointer bg-white text-black dark:bg-darkGrey dark:text-white"
                 {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef}
                 onClick={() => setOpenTaskModal(true)}>
-                    <h4 className="heading-md mb-2 group-hover:text-mainPurple">{data.customer} for {data.branch}</h4>
+                    <h4 className="heading-md mb-2 group-hover:text-mainPurple">{new Date().getFullYear() % 100}-{Math.floor(Math.random()*90000) + 10000}-{data.customer.replace(/\s/g, '').toLowerCase()}-{data.branch.toLowerCase()}</h4>
                     <p className="body-md text-mediumGrey">{data.etaRequested} at {data.streetAddress}</p>
                 </li>
                 <Modal show={openTaskModal} onClose={() => setOpenTaskModal(false)}>

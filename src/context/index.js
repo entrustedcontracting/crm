@@ -45,7 +45,7 @@ function BoardProvider({ children }) {
     //   };
     // });
     task.slug = stringToSlug(task.customer);
-    console.log(slug);
+    console.log(task);
     column.tasks.push(task.id);
     currentBoard.tasks.push(task);
     setBoards([...boards]);
