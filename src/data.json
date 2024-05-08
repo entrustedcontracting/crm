@@ -404,16 +404,235 @@
                     "id": 63
                 }
             ],
-            "action": [
+            "damageConsultant": [
                 {
                     "id": 64,
-                    "name": "Left Voicemail"
+                    "name": "Blake Masterman"
                 },
                 {
-                    "name": "Sent Text",
+                    "name": "Nico Gomez",
+                    "id": 65
+                },
+                {
+                    "name": "Chris Mitchell",
+                    "id": 65
+                }
+            ],
+            "scope": [
+                {
+                    "id": 64,
+                    "name": "ESGC"
+                },
+                {
+                    "name": "ES",
+                    "id": 65
+                },
+                {
+                    "name": "GC",
+                    "id": 65
+                }
+            ],
+            "over25k": [
+                {
+                    "id": 64,
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
+                    "id": 65
+                }
+            ],
+            "providePhase": [
+                {
+                    "id": 64,
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
+                    "id": 65
+                }
+            ],
+            "claimFiled": [
+                {
+                    "id": 64,
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
+                    "id": 65
+                }
+            ],
+            "policyCap": [
+                {
+                    "id": 64,
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
+                    "id": 65
+                }
+            ],
+            "deductKnown": [
+                {
+                    "id": 64,
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
+                    "id": 65
+                }
+            ],
+            "catWater": [
+                {
+                    "id": 64,
+                    "name": "Cat-1"
+                },
+                {
+                    "name": "Cat-2",
+                    "id": 65
+                },
+                {
+                    "name": "Cat-3",
+                    "id": 65
+                }
+            ],
+            "colStatus": [
+                {
+                    "id": 64,
+                    "name": "Fixed"
+                },
+                {
+                    "name": "Not Fixed",
+                    "id": 65
+                }
+            ],
+            "roomsAffected": [
+                {
+                    "id": 64,
+                    "name": "Bedroom"
+                },
+                {
+                    "name": "Bathroom",
+                    "id": 65
+                },
+                {
+                    "name": "Kitchen",
+                    "id": 65
+                },
+                {
+                    "name": "Garage",
+                    "id": 65
+                }
+            ],
+            "demoNeeded": [
+                {
+                    "id": 64,
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
+                    "id": 65
+                }
+            ],
+            "moldTest": [
+                {
+                    "id": 64,
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
+                    "id": 65
+                }
+            ],
+            "renoOpp": [
+                {
+                    "id": 64,
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
+                    "id": 65
+                }
+            ],
+            "custDisc": [
+                {
+                    "id": 64,
+                    "name": "D"
+                },
+                {
+                    "name": "I",
+                    "id": 65
+                },
+                {
+                    "name": "S",
+                    "id": 65
+                },
+                {
+                    "name": "C",
+                    "id": 65
+                }
+            ],
+            "propExpec": [
+                {
+                    "id": 64,
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
+                    "id": 65
+                }
+            ],
+            "cancFup": [
+                {
+                    "id": 64,
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
+                    "id": 65
+                }
+            ],
+            "costExpec": [
+                {
+                    "id": 64,
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
+                    "id": 65
+                }
+            ],
+            "insProc": [
+                {
+                    "id": 64,
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
+                    "id": 65
+                }
+            ],
+            "contUp": [
+                {
+                    "id": 64,
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
+                    "id": 65
+                }
+            ],
+            "photoUp": [
+                {
+                    "id": 64,
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
                     "id": 65
                 }
             ]
+            
         }
     ]
 }
