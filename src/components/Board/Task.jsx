@@ -19,7 +19,7 @@ const Task = ({ data, index }) => {
     <Draggable draggableId={data.slug} index={index} >
         {(provided) => (
         <>
-            <div index={index}>
+            <div>
                 <li className="group select-none shadow-main px-4 py-6 rounded-lg cursor-pointer bg-white text-black dark:bg-darkGrey dark:text-white"
                 {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef}
                 onClick={() => setOpenTaskModal(true)}>

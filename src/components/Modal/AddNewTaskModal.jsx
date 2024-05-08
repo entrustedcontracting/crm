@@ -8,6 +8,13 @@ import StatusDropdown from "@components/shared/StatusDropdown";
 import TextInput from "@components/shared/TextInput";
 import TextArea from "@components/shared/TextArea";
 import InputArray from "@components/shared/InputArray";
+// 
+import { createClient } from '@supabase/supabase-js'
+import { v4 as uuidv4 } from "uuid";
+// 
+const supabaseUrl = 'https://tnjoxuevcrbolyxetddm.supabase.co'
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRuam94dWV2Y3Jib2x5eGV0ZGRtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTUwMjY1NzksImV4cCI6MjAzMDYwMjU3OX0.9c4mqe_HHcTMQ35ht0auAKf1hNHs5OZu94fxhPg5wZc'
+const supabase = createClient(supabaseUrl, supabaseKey)
 
 const AddNewTaskModal = ({ onClose }) => {
     const { columns, branches, tags, carriers, referralSources, referralSourceIndividuals, compJob, pDJob, vips, ifVips, accountManagers, confirmAddress, opportunityTypes, homeowners, gatedCommunities, propertyTypes, cols, zones, actions, createTask } = useBoards();
@@ -34,6 +41,46 @@ const AddNewTaskModal = ({ onClose }) => {
     const validate = Yup.object({
         // customer: Yup.string().required("Can't be empty"),
     })
+
+    const postDispatch = async (values) => {
+        let supabaseObj = {
+            "lead_id": uuidv4(),
+            "carrier_name": values.carrier,
+            "referral_source_name": values.referralSource,
+            "referral_source_individual_name": values.referralSourceIndividual,
+            "account_manager_name": values.accountManager,
+            "customer_name": values.customer,
+            "branch": values.branch,
+            "is_comp_job": true ? values.cJ == 'Yes' : false,
+            "is_partner_discount_job": true ? values.pDJ == 'Yes' : false,
+            "is_vip": true ? values.v == 'Yes' : false,
+            "why_vip": values.vip,
+            "time_lead_came_in": values.timeLead,
+            "is_address_confirmed": true ? values.confirmAddress == 'Yes' : false,
+            "opportunity_type": values.opportunityType,
+            "is_homeowner": true ? values.homeowner == 'Yes' : false,
+            "is_gated_community": true ? values.gatedCommunity == 'Yes' : false,
+            "gate_code": values.gateCode,
+            "lock_box_code": values.loxBoxCode,
+            "property_type": values.propertyType,
+            "cause_of_loss": values.col,
+            "cause_of_loss_details": values.colDetails,
+            "inside_sales_special_instructions": values.specialInstructions,
+            "zone": values.zone,
+            "action_taken": values.action,
+            "marketing_assistance_needed": values.marketingAssistance,
+            "eta_requested": values.etaRequested,
+            "on_call_damage_consultant_name": values.onCallDC
+        };
+        print(supabaseObj);
+        // 
+        const { data, error } = await supabase
+        .from('leads')
+        .insert(supabaseObj)
+        .select()
+        return data, error;
+    }
+
     return (
         <Formik
             initialValues={{
@@ -47,6 +94,8 @@ const AddNewTaskModal = ({ onClose }) => {
                 console.log(values);
                 console.log('test');
                 createTask(values);
+                // 
+                postDispatch(values);
                 onClose();
             }}
         >
