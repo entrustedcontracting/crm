@@ -42,7 +42,7 @@ const AddNewTaskModal = ({ onClose }) => {
         // customer: Yup.string().required("Can't be empty"),
     })
 
-    const postDispatch = (values) => {
+    const postDispatch = async (values) => {
         let supabaseObj = {
             "lead_id": uuidv4(),
             "carrier_name": values.carrier,
@@ -74,7 +74,11 @@ const AddNewTaskModal = ({ onClose }) => {
         };
         print(supabaseObj);
         // 
-
+        const { data, error } = await supabase
+        .from('leads')
+        .insert(supabaseObj)
+        .select()
+        return data, error;
     }
 
     return (
