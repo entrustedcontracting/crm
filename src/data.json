@@ -1,372 +1,447 @@
 {
     "boards": [
-      {
-        "id": 0,
-        "name": "Entrusted CRM",
-        "slug": "entrusted-crm",
-        "tasks": [
-            {
-              "title": "Build UI for onboarding flow",
-              "id": 1,
-              "slug": "build-ui-for-onboarding-flow",
-              "description": "",
-              "status": "Pending Booking",
-              "subtasks": [
+        {
+            "id": 0,
+            "name": "Entrusted CRM",
+            "slug": "entrusted-crm",
+            "tasks": [
                 {
-                  "title": "Sign up page",
-                  "isCompleted": true
+                    "secondPhone": "01234567890",
+                    "branch": "WPB",
+                    "city": "Stuart",
+                    "colDetails": "Here are some COL details",
+                    "customer": "Larry Cucumber",
+                    "description": "Here is a description",
+                    "email": "larry.cucumber@email.com",
+                    "etaRequested": "8:10 am",
+                    "gateCode": "1234",
+                    "id": "",
+                    "lockBoxCode": "5678",
+                    "marketingAssistance": "Marketing assistance information",
+                    "onCallDC": "Bob Tomato",
+                    "phone": "09876543210",
+                    "slug": "",
+                    "specialInstructions": "Here are some special instructions",
+                    "state": "Florida",
+                    "status": "",
+                    "streetAddress": "123 Kitchen Ln",
+                    "title": "",
+                    "yearBuilt": "2001",
+                    "zip": "10101"
+                }
+            ],
+            "columns": [
+                {
+                    "id": 1,
+                    "name": "Pending Booking",
+                    "slug": "pb0",
+                    "color": "#49C4E5",
+                    "tasks": [
+                        0,
+                        1
+                    ]
                 },
                 {
-                  "title": "Sign in page",
-                  "isCompleted": false
+                    "name": "ETA Requested",
+                    "id": 2,
+                    "slug": "er0",
+                    "color": "#8471F2",
+                    "tasks": []
                 },
                 {
-                  "title": "Welcome page",
-                  "isCompleted": false
-                }
-              ]
-            },
-            {
-              "title": "Build UI for search",
-              "id": 2,
-              "slug": "build-ui-for-search",
-              "description": "",
-              "status": "Pending Booking",
-              "subtasks": [
+                    "name": "ETA Proposed",
+                    "id": 3,
+                    "slug": "ep0",
+                    "color": "#67E2AE",
+                    "tasks": []
+                },
                 {
-                  "title": "Search page",
-                  "isCompleted": false
+                    "id": 4,
+                    "name": "ETA Confirmed",
+                    "slug": "ec0",
+                    "color": "#49C4E5",
+                    "tasks": []
+                },
+                {
+                    "name": "Booked",
+                    "id": 5,
+                    "slug": "b0",
+                    "color": "#8471F2",
+                    "tasks": []
+                },
+                {
+                    "name": "At Location",
+                    "id": 6,
+                    "slug": "al0",
+                    "color": "#67E2AE",
+                    "tasks": []
+                },
+                {
+                    "name": "Pending Closing",
+                    "id": 7,
+                    "slug": "pc0",
+                    "color": "#8471F2",
+                    "tasks": []
+                },
+                {
+                    "name": "On Hold",
+                    "id": 8,
+                    "slug": "oh0",
+                    "color": "#67E2AE",
+                    "tasks": []
+                },
+                {
+                    "name": "Won",
+                    "id": 9,
+                    "slug": "w0",
+                    "color": "#8471F2",
+                    "tasks": []
+                },
+                {
+                    "name": "Lost",
+                    "id": 10,
+                    "slug": "l0",
+                    "color": "#67E2AE",
+                    "tasks": []
                 }
-              ]
-            }
-          ],
-        "columns": [
-          {
-              "id": 1,
-              "name": "Pending Booking",
-              "slug": "pb0",
-              "color": "#49C4E5",
-              "tasks": [0,1]
-          },{
-              "name": "ETA Requested",
-              "id": 2,
-              "slug": "er0",
-              "color": "#8471F2",
-              "tasks": []
-          },{
-              "name": "ETA Proposed",
-              "id": 3,
-              "slug": "ep0",
-              "color": "#67E2AE",
-              "tasks": []
-          },{
-              "id": 4,
-              "name": "ETA Confirmed",
-              "slug": "ec0",
-              "color": "#49C4E5",
-              "tasks": []
-          },{
-              "name": "Booked",
-              "id": 5,
-              "slug": "b0",
-              "color": "#8471F2",
-              "tasks": []
-          },{
-              "name": "At Location",
-              "id": 6,
-              "slug": "al0",
-              "color": "#67E2AE",
-              "tasks": []
-          },{
-            "name": "Pending Closing",
-            "id": 7,
-            "slug": "pc0",
-            "color": "#8471F2",
-            "tasks": []
-          },{
-              "name": "On Hold",
-              "id": 8,
-              "slug": "oh0",
-              "color": "#67E2AE",
-              "tasks": []
-          },{
-            "name": "Won",
-            "id": 9,
-            "slug": "w0",
-            "color": "#8471F2",
-            "tasks": []
-          },{
-              "name": "Lost",
-              "id": 10,
-              "slug": "l0",
-              "color": "#67E2AE",
-              "tasks": []
-          }
-        ],
-        "branches": [
-          {
-              "id": 1,
-              "name": "WPB",
-              "slug": "l0",
-              "color": "#67E2AE",
-              "tasks": [10,11,12,13,14,15,16]
-          },{
-              "id": 2,
-              "name": "ORL",
-              "slug": "l0",
-              "color": "#67E2AE",
-              "tasks": [10,11,12,13,14,15,16]
-          },{
-              "id": 3,
-              "name": "HOU",
-              "slug": "l0",
-              "color": "#67E2AE",
-              "tasks": [10,11,12,13,14,15,16]
-          }
-        ],
-        "tags": [
-          {
-              "id": 10,
-              "name": "VIP"
-          },{
-              "name": "Canceled ES",
-              "id": 11
-          },{
-              "name": "Canceled GC",
-              "id": 12
-          },{
-              "id": 13,
-              "name": "Complimentary"
-          },{
-              "name": "Comparative Assessment",
-              "id": 14
-          },{
-              "name": "Partner Discount",
-              "id": 15
-          },{
-            "name": "Cancellation Concern",
-            "id": 16
-          },{
-              "name": "Insurance",
-              "id": 17
-          },{
-            "name": "Cash",
-            "id": 18
-          },{
-              "name": "ES",
-              "id": 19
-          },{
-            "name": "GC",
-            "id": 20
-          },{
-            "name": "MLD",
-            "id": 21
-          },{
-            "name": "FRE",
-            "id": 22
-          },{
-            "name": "On Hold",
-            "id": 23
-          }
-        ],
-        "carrier": [
-          {
-              "id": 24,
-              "name": "Fl Family"
-          },{
-              "name": "Fl Farm",
-              "id": 25
-          },{
-              "name": "Universal",
-              "id": 26
-          },{
-              "id": 27,
-              "name": "Citizens"
-          },{
-              "name": "Other",
-              "id": 28
-          }
-        ],
-        "referralSource": [
-          {
-              "id": 29,
-              "name": "JMS"
-          },{
-              "name": "1800 Plumber",
-              "id": 30
-          },{
-              "name": "Universal",
-              "id": 31
-          },{
-              "id": 32,
-              "name": "Ironman Plumbing"
-          },{
-              "name": "American Leak Detection",
-              "id": 33
-          }
-        ],
-        "referralSourceIndividual": [
-          {
-              "id": 34,
-              "name": "Rey"
-          },{
-              "name": "1800 Plumber",
-              "id": 35
-          },{
-              "name": "John",
-              "id": 36
-          },{
-              "id": 37,
-              "name": "Jackson"
-          },{
-              "name": "Maria",
-              "id": 38
-          }
-        ],
-        "compJob": [
-          {
-              "id": 39,
-              "name": "Yes"
-          },{
-              "name": "No",
-              "id": 40
-          }
-        ],
-        "pDJob": [
-          {
-              "id": 39,
-              "name": "Yes"
-          },{
-              "name": "No",
-              "id": 40
-          }
-        ],
-        "vips": [
-          {
-              "id": 39,
-              "name": "Yes"
-          },{
-              "name": "No",
-              "id": 40
-          }
-        ],
-        "ifVip": [
-          {
-              "id": 39,
-              "name": "Partner home or Family member home"
-          },{
-              "name": "VIP for them",
-              "id": 40
-          },{
-              "name": "A lot of fires",
-              "id": 41
-          },{
-              "id": 42,
-              "name": "New account and early lead"
-          }
-        ],
-        "accountManager": [
-          {
-              "id": 43,
-              "name": "Aaron Bergeron"
-          },{
-              "name": "Josh Sattiazahn",
-              "id": 44
-          },{
-              "name": "Jeff Algra",
-              "id": 45
-          },{
-              "id": 46,
-              "name": "Garrett McCray"
-          }
-        ],
-        "confirmAddress": [
-          {
-              "id": 39,
-              "name": "Yes"
-          },{
-              "name": "No",
-              "id": 40
-          }
-        ],
-        "opportunityType": [
-          {
-              "id": 47,
-              "name": "WTR"
-          },{
-              "name": "FRE",
-              "id": 48
-          },{
-              "name": "MLD",
-              "id": 49
-          },{
-              "id": 50,
-              "name": "RBD"
-          },{
-            "id": 51,
-            "name": "RNO"
+            ],
+            "branches": [
+                {
+                    "id": 1,
+                    "name": "WPB",
+                    "slug": "l0",
+                    "color": "#67E2AE",
+                    "tasks": [
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "ORL",
+                    "slug": "l0",
+                    "color": "#67E2AE",
+                    "tasks": [
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "HOU",
+                    "slug": "l0",
+                    "color": "#67E2AE",
+                    "tasks": [
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16
+                    ]
+                }
+            ],
+            "tags": [
+                {
+                    "id": 10,
+                    "name": "VIP"
+                },
+                {
+                    "name": "Canceled ES",
+                    "id": 11
+                },
+                {
+                    "name": "Canceled GC",
+                    "id": 12
+                },
+                {
+                    "id": 13,
+                    "name": "Complimentary"
+                },
+                {
+                    "name": "Comparative Assessment",
+                    "id": 14
+                },
+                {
+                    "name": "Partner Discount",
+                    "id": 15
+                },
+                {
+                    "name": "Cancellation Concern",
+                    "id": 16
+                },
+                {
+                    "name": "Insurance",
+                    "id": 17
+                },
+                {
+                    "name": "Cash",
+                    "id": 18
+                },
+                {
+                    "name": "ES",
+                    "id": 19
+                },
+                {
+                    "name": "GC",
+                    "id": 20
+                },
+                {
+                    "name": "MLD",
+                    "id": 21
+                },
+                {
+                    "name": "FRE",
+                    "id": 22
+                },
+                {
+                    "name": "On Hold",
+                    "id": 23
+                }
+            ],
+            "carrier": [
+                {
+                    "id": 24,
+                    "name": "Fl Family"
+                },
+                {
+                    "name": "Fl Farm",
+                    "id": 25
+                },
+                {
+                    "name": "Universal",
+                    "id": 26
+                },
+                {
+                    "id": 27,
+                    "name": "Citizens"
+                },
+                {
+                    "name": "Other",
+                    "id": 28
+                }
+            ],
+            "referralSource": [
+                {
+                    "id": 29,
+                    "name": "JMS"
+                },
+                {
+                    "name": "1800 Plumber",
+                    "id": 30
+                },
+                {
+                    "name": "Universal",
+                    "id": 31
+                },
+                {
+                    "id": 32,
+                    "name": "Ironman Plumbing"
+                },
+                {
+                    "name": "American Leak Detection",
+                    "id": 33
+                }
+            ],
+            "referralSourceIndividual": [
+                {
+                    "id": 34,
+                    "name": "Rey"
+                },
+                {
+                    "name": "1800 Plumber",
+                    "id": 35
+                },
+                {
+                    "name": "John",
+                    "id": 36
+                },
+                {
+                    "id": 37,
+                    "name": "Jackson"
+                },
+                {
+                    "name": "Maria",
+                    "id": 38
+                }
+            ],
+            "compJob": [
+                {
+                    "id": 39,
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
+                    "id": 40
+                }
+            ],
+            "pDJob": [
+                {
+                    "id": 39,
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
+                    "id": 40
+                }
+            ],
+            "vips": [
+                {
+                    "id": 39,
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
+                    "id": 40
+                }
+            ],
+            "ifVip": [
+                {
+                    "id": 39,
+                    "name": "Partner home or Family member home"
+                },
+                {
+                    "name": "VIP for them",
+                    "id": 40
+                },
+                {
+                    "name": "A lot of fires",
+                    "id": 41
+                },
+                {
+                    "id": 42,
+                    "name": "New account and early lead"
+                }
+            ],
+            "accountManager": [
+                {
+                    "id": 43,
+                    "name": "Aaron Bergeron"
+                },
+                {
+                    "name": "Josh Sattiazahn",
+                    "id": 44
+                },
+                {
+                    "name": "Jeff Algra",
+                    "id": 45
+                },
+                {
+                    "id": 46,
+                    "name": "Garrett McCray"
+                }
+            ],
+            "confirmAddress": [
+                {
+                    "id": 39,
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
+                    "id": 40
+                }
+            ],
+            "opportunityType": [
+                {
+                    "id": 47,
+                    "name": "WTR"
+                },
+                {
+                    "name": "FRE",
+                    "id": 48
+                },
+                {
+                    "name": "MLD",
+                    "id": 49
+                },
+                {
+                    "id": 50,
+                    "name": "RBD"
+                },
+                {
+                    "id": 51,
+                    "name": "RNO"
+                }
+            ],
+            "homeowner": [
+                {
+                    "id": 52,
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
+                    "id": 53
+                }
+            ],
+            "gatedCommunity": [
+                {
+                    "id": 54,
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
+                    "id": 55
+                }
+            ],
+            "propertyType": [
+                {
+                    "id": 56,
+                    "name": "Residential"
+                },
+                {
+                    "name": "Commercial",
+                    "id": 57
+                }
+            ],
+            "col": [
+                {
+                    "id": 58,
+                    "name": "A/C Leak"
+                },
+                {
+                    "name": "Foundation/Structural Leak",
+                    "id": 59
+                },
+                {
+                    "name": "Sink Leak",
+                    "id": 60
+                }
+            ],
+            "zone": [
+                {
+                    "id": 61,
+                    "name": "1"
+                },
+                {
+                    "name": "2",
+                    "id": 62
+                },
+                {
+                    "name": "3",
+                    "id": 63
+                }
+            ],
+            "action": [
+                {
+                    "id": 64,
+                    "name": "Left Voicemail"
+                },
+                {
+                    "name": "Sent Text",
+                    "id": 65
+                }
+            ]
         }
-        ],
-        "homeowner": [
-          {
-              "id": 52,
-              "name": "Yes"
-          },{
-              "name": "No",
-              "id": 53
-          }
-        ],
-        "gatedCommunity": [
-          {
-              "id": 54,
-              "name": "Yes"
-          },{
-              "name": "No",
-              "id": 55
-          }
-        ],
-        "propertyType": [
-          {
-              "id": 56,
-              "name": "Residential"
-          },{
-              "name": "Commercial",
-              "id": 57
-          }
-        ],
-        "col": [
-          {
-              "id": 58,
-              "name": "A/C Leak"
-          },{
-              "name": "Foundation/Structural Leak",
-              "id": 59
-          },{
-            "name": "Sink Leak",
-            "id": 60
-        }
-        ],
-        "zone": [
-          {
-              "id": 61,
-              "name": "1"
-          },{
-              "name": "2",
-              "id": 62
-          },{
-            "name": "3",
-            "id": 63
-        }
-        ],
-        "action": [
-          {
-              "id": 64,
-              "name": "Left Voicemail"
-          },{
-              "name": "Sent Text",
-              "id": 65
-          }
-        ]
-      }
-  ]
+    ]
 }

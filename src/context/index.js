@@ -82,7 +82,7 @@ function BoardProvider({ children }) {
   const updateTask = (updatedTask) => {
     const task = currentBoard.tasks.find((task) => task.id === updatedTask.id);
     task.title = updatedTask.title;
-    task.subtasks = updatedTask.subtasks;
+    // task.subtasks = updatedTask.subtasks;
     task.slug = stringToSlug(task.title);
     if (updatedTask.status !== task.status) {
       const column = currentBoard.columns.find(
@@ -114,14 +114,14 @@ function BoardProvider({ children }) {
     setBoards([...boards]);
   };
 
-  const toggleSubtask = (taskId, subtaskId) => {
-    const task = currentBoard.tasks.find((task) => task.id === taskId);
-    const subtask = task.subtasks[subtaskId];
-    subtask.isCompleted
-      ? (subtask.isCompleted = false)
-      : (subtask.isCompleted = true);
-    setBoards([...boards]);
-  };
+  // const toggleSubtask = (taskId, subtaskId) => {
+  //   const task = currentBoard.tasks.find((task) => task.id === taskId);
+  //   const subtask = task.subtasks[subtaskId];
+  //   subtask.isCompleted
+  //     ? (subtask.isCompleted = false)
+  //     : (subtask.isCompleted = true);
+  //   setBoards([...boards]);
+  // };
 
   const changeTaskStatus = (taskId, status) => {
     const task = currentBoard.tasks.find((task) => task.id === taskId);
@@ -217,7 +217,7 @@ function BoardProvider({ children }) {
     actions,
     createBoard,
     createColumn,
-    toggleSubtask,
+    // toggleSubtask,
     createTask,
     changeTaskStatus,
     updateTask,

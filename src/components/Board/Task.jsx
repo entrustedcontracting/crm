@@ -12,6 +12,7 @@ const Task = ({ data, index }) => {
   const [updateModal, setUpdateModal] = useState(false);
   const [deleteModal, setDeleteModal] = useState(false);
   const { deleteTask } = useBoards();
+  console.log("hello" + data);
 
   //number of completed subtasks
   //const completedSubtasks = data.subtasks.reduce((acc, subtask) => subtask.isCompleted ? acc + 1 : acc, 0);
@@ -45,7 +46,7 @@ const Task = ({ data, index }) => {
                 </Modal>
                 <Modal show={deleteModal} onClose={() => setDeleteModal(!deleteModal)}>
                     <DeleteTaskModal
-                    // title={data.title}
+                    // title={data.customer}
                     onClose={() => {
                         setDeleteModal(false);
                         setOpenTaskModal(true);

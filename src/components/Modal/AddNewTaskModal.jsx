@@ -32,27 +32,20 @@ const AddNewTaskModal = ({ onClose }) => {
     const [status, setStatus] = useState(columns[0].name);
 
     const validate = Yup.object({
-        title: Yup.string().required("Can't be empty"),
-        subtasks: Yup.array().of(
-            Yup.object({
-                title: Yup.string().required("Can't be empty"),
-            }),
-        )
+        // customer: Yup.string().required("Can't be empty"),
     })
     return (
         <Formik
             initialValues={{
-                title: "",
                 description: "",
-                subtasks: ['', ''],
                 status: status,
-                branch: branch
+                branch: branch,
+                customer: ""
             }}
             validationSchema={validate}
             onSubmit={(values) => {
+                console.log(values);
                 console.log('test');
-                values.status = status;
-                values.branch = branch;
                 createTask(values)
                 onClose()
             }}
@@ -79,32 +72,32 @@ const AddNewTaskModal = ({ onClose }) => {
                         <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
                         <TextInput label="Customer" name="customer" type="text" placeholder="John Smith"/>
                         <TextInput label="Phone" name="phone" type="text" placeholder=""/>
-                        <TextInput label="2nd Phone" name="2-phone" type="text" placeholder=""/>
+                        <TextInput label="2nd Phone" name="secondPhone" type="text" placeholder=""/>
                         <TextInput label="Email" name="email" type="text" placeholder="johnsmith@email.com"/>
-                        <TextInput label="Street Address" name="street-address" type="text" placeholder="123 Road"/>
+                        <TextInput label="Street Address" name="streetAddress" type="text" placeholder="123 Road"/>
                         <TextInput label="City" name="city" type="text" placeholder="City"/>
                         <TextInput label="Zip" name="zip" type="text" placeholder="12345"/>
                         <TextInput label="State" name="state" type="text" placeholder="Florida"/>
-                        <TextInput label="Year Built" name="year-built" type="text" placeholder="1999"/>
+                        <TextInput label="Year Built" name="yearBuilt" type="text" placeholder="1999"/>
                         <Dropdown label={"Inside Sales Confirm Address"} value={confirmA} values={confirmAddress} setValue={setConfirmAddress}/>
                         <p className="heading-md mb-6 pt-10">Internal Info</p>
                         <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
                         <Dropdown label={"Opportunity Type"} value={opportunityType} values={opportunityTypes} setValue={setOpportunityType} />
-                        <TextInput label="Time Lead Came In" name="time-lead" type="text" placeholder="7:00 am"/>
+                        <TextInput label="Time Lead Came In" name="timeLead" type="text" placeholder="7:00 am"/>
                         <Dropdown label={"Homeowner"} value={homeowner} values={homeowners} setValue={setHomeowner} />
                         <Dropdown label={"Gated Community"} value={gatedCommunity} values={gatedCommunities} setValue={setGatedCommunity} />
-                        <TextInput label="Gate Code" name="gate-code" type="text" placeholder="1234"/>
-                        <TextInput label="Lock Box Code" name="lock-box-code" type="text" placeholder="1234"/>
+                        <TextInput label="Gate Code" name="gateCode" type="text" placeholder="1234"/>
+                        <TextInput label="Lock Box Code" name="lockBoxCode" type="text" placeholder="1234"/>
                         <Dropdown label={"Property Type"} value={propertyType} values={propertyTypes} setValue={setPropertyType} />
                         <Dropdown label={"COL"} value={col} values={cols} setValue={setCol} />
-                        <TextArea label="COL Details" name="col-details" type="text" placeholder="Some details..."/>
-                        <TextArea label="Inside Sales Special Instructions" name="special-instructions" type="text" placeholder="Some instructions..."/>
+                        <TextArea label="COL Details" name="colDetails" type="text" placeholder="Some details..."/>
+                        <TextArea label="Inside Sales Special Instructions" name="specialInstructions" type="text" placeholder="Some instructions..."/>
                         <Dropdown label={"Zone"} value={zone} values={zones} setValue={setZone} />
                         <Dropdown label={"Action"} value={action} values={actions} setValue={setAction} />
-                        <TextInput label="Marketing Assistance Needed" name="marketing-assistance" type="text" placeholder=""/>
+                        <TextInput label="Marketing Assistance Needed" name="marketingAssistance" type="text" placeholder=""/>
                         {/* <InputArray label="subtasks" array={formik.values.subtasks} /> */}
-                        <TextInput label="ETA Requested" name="eta-requested" type="text" placeholder="7:10 am"/>
-                        <TextInput label="On Call DC" name="on-call-dc" type="text" placeholder=""/>
+                        <TextInput label="ETA Requested" name="etaRequested" type="text" placeholder="7:10 am"/>
+                        <TextInput label="On Call DC" name="onCallDC" type="text" placeholder=""/>
                         {/* <StatusDropdown status={status} setStatus={setStatus} /> */}
 
                         <Button type="submit" className="mt-6 w-full bg-mainPurple text-white text-base rounded-full p-2 transition duration-200 hover:bg-mainPurpleHover">+ Add New Task</Button>
